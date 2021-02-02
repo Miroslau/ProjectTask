@@ -1,0 +1,124 @@
+{
+    "name": "Семейное древо",
+    "children": [
+        {
+            "name": "Семья Васильевых",
+            "children": [
+                {
+                    "firstName": "Марина",
+                    "lastName": "Васильевна",
+                    "born": 1880,
+                    "died": 1930,
+                    "description": "Женщина как женщина. Умела готовить.",
+                    "humanUId": "VasielvevnaOne",
+                    "sex": 2
+                },
+                {
+                    "firstName": "Олег",
+                    "lastName": "Васильев",
+                    "born": 1912,
+                    "died": 1982,
+                    "description": "Прошел вторую мировую. В первой помогал как ребенок. Тяжелая судьба",
+                    "humanUId": "VasielvevTwo",
+                    "parentUid": "VasilievOne",
+                    "sex": 1,
+                    "children": [
+                        {
+                            "firstName": "Алексей",
+                            "lastName": "Васильев",
+                            "born": 1942,
+                            "died": 1972,
+                            "description": "Красивый и добрый мужчина. Самый сильный на деревне.",
+                            "humanUId": "VasilievOne",
+                            "sex": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Семья Головач",
+            "children": [
+                {
+                    "firstName": "Мария",
+                    "lastName": "Головач",
+                    "born": 1946,
+                    "died": 2000,
+                    "description": "Описание",
+                    "humanUId": "MariaGolovachFirst",
+                    "sex": 2
+                },
+                {
+                    "firstName": "Александр",
+                    "lastName": "Головач",
+                    "born": 1945,
+                    "died": 2000,
+                    "description": "Описание",
+                    "humanUId": "MariaGolovachSecond",
+                    "parentUid": "VasielvevnaTwo",
+                    "sex": 1,
+                    "children": [
+                        {
+                            "firstName": "Екатерина",
+                            "lastName": "Васильевна",
+                            "born": 1910,
+                            "died": 1956,
+                            "description": "Описание Екатерины Васильевны",
+                            "humanUId": "VasielvevnaTwo",
+                            "sex": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Семья Крекниковых",
+            "children": [
+                {
+                    "firstName": "Дмитрий",
+                    "lastName": "Крекников",
+                    "born": 1891,
+                    "died": 1981,
+                    "description": "Описание",
+                    "humanUId": "DmKrek",
+                    "sex": 1
+                }
+            ]
+        },
+        {
+            "name": "Семья Утюшкиных",
+            "children": [
+                {
+                    "firstName": "Олег",
+                    "lastName": "Утюшкин",
+                    "born": 1930,
+                    "died": 2020,
+                    "description": "Описание",
+                    "humanUId": "OlegUtishikinOne",
+                    "sex": 1
+                },
+                {
+                    "firstName": "Василиса",
+                    "lastName": "Утюшкина",
+                    "born": 1944,
+                    "died": 2010,
+                    "description": "Описание",
+                    "humanUId": "VasiliaUtishkina",
+                    "parentUid": "AlexKreknov",
+                    "sex": 2,
+                    "children": [
+                        {
+                            "firstName": "Алексндра",
+                            "lastName": "Крекникова",
+                            "born": 1900,
+                            "died": 1945,
+                            "description": "Описание",
+                            "humanUId": "AlexKreknov",
+                            "sex": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
