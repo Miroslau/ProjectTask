@@ -30,7 +30,9 @@
               <tr v-for="family of filtredPeoples" :key="family.key">
                 <td>{{ family.firstName }}</td>
                 <td>{{ family.lastName }}</td>
-                <td class="td_pointer">Подробнее</td>
+                <td>
+                  <router-link class="td_pointer" :to="{name: 'accountpageId', params: {id: family.humanUId, family: family}}">Подробнее</router-link>
+                </td>
               </tr>
             </table>
           </div>
@@ -44,7 +46,7 @@
 
 export default {
   created() {
-    this.child = this.node.children.map((i) => i);
+    this.child = this.$myRoot.children.map((i) => i);
     this.list = this.child.map((people) => people.children);
     this.listPeople = this.list.flat();
   },
@@ -55,12 +57,11 @@ export default {
       inputStr: "",
       myPlaceholder: "Марина Васильевна",
       child: [],
-      listPeople: [],
+      listPeople: []
     };
   },
 
   props: {
-    node: Object,
   },
 
   computed: {
@@ -285,6 +286,8 @@ export default {
 
 .td_pointer {
   cursor: pointer;
+  color: #CAD4D6;
+  text-decoration: none;
 }
 
 @media(min-width: 320px) and (max-width: 767px) {

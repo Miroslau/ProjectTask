@@ -15,6 +15,12 @@ export default new Router({
             name: 'search',
             component: () => import('./components/SearchFamily.vue'),
             props: true
+        },
+        {
+            path: '/accountpage/:id',
+            name: 'accountpageId',
+            component: () => import('./pages/AccountPage.vue'),
+            props: true
         }
     ]
 })

@@ -7,10 +7,10 @@
     />
     <hr />
     <div class="searchFamily">
-        <router-link :to="{name: 'search', params:{node: root}}">Поиск родителя</router-link>
+        <router-link :to="{name: 'search'}">Поиск родителя</router-link>
     </div>
     <TreeFamily 
-      :node="root" 
+      :node="$myRoot" 
       @onClick="nodeWasClicked" 
     />
     <!--<hr />
@@ -28,6 +28,10 @@ import root from "./root.json";
 
 export default {
   name: "App",
+
+  created() {
+    console.log(this.$myRoot)
+  },
 
   data() {
     return {
